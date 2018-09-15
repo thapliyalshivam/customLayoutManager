@@ -14,9 +14,10 @@ RecyclerView r1;
 
         r1 = findViewById(R.id.rvDisplay);
 
-        r1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
         DisplayAdapter adapter = new DisplayAdapter(this);
         r1.setAdapter(adapter);
 
+        int stepSize = 500/3;
+        r1.setLayoutManager(new RoundLayoutManager(stepSize));
     }
 }
