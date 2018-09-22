@@ -3,6 +3,7 @@ package com.example.tshivam.customlayoutmanager;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ public class DisplayAdapter extends RecyclerView.Adapter<DisplayAdapter.ABC> {
     List<String> link=new ArrayList<>();
 
     public DisplayAdapter(Context context) {
+
         this.context=context;
         aa.add("aaa");
         link.add("https://cdn.dribbble.com/users/59947/screenshots/3864137/muti-1_1x.jpg");
